@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='flex flex-col items-center justify-center p-4'>
-                <p className='lg:text-[20px] text-[18px]'>© 2023 Fashion Hub. All rights reserved.</p>
+                <p className='lg:text-[20px] text-[18px]'>© {new Date().getFullYear()} Fashion Hub. All rights reserved.</p>
                 <p className='lg:text-[20px] text-[18px]'>Terms of Service | Privacy Policy</p>
             </div>
         </div>
