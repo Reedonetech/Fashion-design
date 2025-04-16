@@ -15,13 +15,13 @@ const Navbar = () => {
             </div>
             <div className='flex flex-row items-center justify-between w-full gap-[30px]'>
                 <div className='flex items-center gap-[10px]'>
-                    <ul className='flex flex-row gap-[20px] px-[60px]'>
+                    <ul className='lg:flex flex-row gap-[20px] px-[60px] hidden'>
                         <li>Home</li>
                         <li>Products</li>
                         <a href="#contact"><li>Contact</li></a>
                         <a href="#about"><li>About</li></a>
                     </ul>
-                    <div className='flex flex-row gap-[50px]'>
+                    <div className='lg:flex flex-row gap-[50px] hidden'>
                         <img src={img1} alt="" />
                         <img src={img2} alt="" />
                         <img src={img3} alt="" />
