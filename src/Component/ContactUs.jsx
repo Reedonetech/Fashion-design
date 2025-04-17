@@ -3,7 +3,7 @@ import React from 'react'
 const ContactUs = () => {
   return (
     <div>
-        <div className='flex flex-col border-r-indigo-600 lg:pt-[2%] bg-red-800  lg:px-10 px-[20px] lg:gap-[30px] justify-center' id='contact'>
+        <div className='flex flex-col border-r-indigo-600 lg:pt-[2%] lg:px-10 px-[20px] lg:gap-[30px] justify-center' id='contact'>
             <div className='w-[100%] h-[100%] bg-white shadow-2xl p-4 px-[40px] gap-[20px]'>
                 <div className='flex flex-col items-center justify-start p-2 px-[40px] w-[100%] h-[100%]'>
                     <p className='text-[30px] font-mono font-bold'>Contact Us</p>
