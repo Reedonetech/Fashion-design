@@ -6,9 +6,9 @@ import Herobody2 from './Component/Herobody2';
 import Herobody3 from './Component/Herobody3';
 import Herobody4 from './Component/Herobody4';
 import AboutUs from './Component/AboutUs';
-import ContactUs from './Component/ContactUs';
 import Footer from './Component/Footer';
 import Course from './Component/Course';
+import ContactUs from './Component/ContactUs';
 
 
 function App() {
@@ -18,11 +18,11 @@ function App() {
       <Hero />
       <AboutUs />
       <Course />
+      <Herobody4/>
+      <ContactUs />
+      <Footer />
       {/* <Herobody /> */}
       {/* <Herobody3 /> */}
-      <Herobody4/>
-      {/* <ContactUs /> */}
-      {/* <Footer /> */}
     </div>
   );
 }
