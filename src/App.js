@@ -8,6 +8,7 @@ import Herobody4 from './Component/Herobody4';
 import AboutUs from './Component/AboutUs';
 import ContactUs from './Component/ContactUs';
 import Footer from './Component/Footer';
+import Course from './Component/Course';
 
 
 function App() {
@@ -15,13 +16,13 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <Herobody />
-      <Herobody2 />
-      <Herobody3 />
-      <Herobody4/>
       <AboutUs />
-      <ContactUs />
-      <Footer />
+      <Course />
+      {/* <Herobody /> */}
+      {/* <Herobody3 /> */}
+      <Herobody4/>
+      {/* <ContactUs /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

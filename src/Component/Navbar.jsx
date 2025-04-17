@@ -9,9 +9,9 @@ const Navbar = () => {
   return (
     <div>
         
-        <div className='flex flex-row items-center bg-gray-200 p-4 px-[40px] gap-[40px]'>
+        <div className='flex flex-row fixed items-center w-full bg-gray-200 p-4 px-[40px] gap-[40px]'>
             <div className='flex items-center'>
-                <h1>Logo</h1>
+                <h1 className='text-[#f0f02d] text-[15px] font-mono'>House</h1>
             </div>
             <div className='flex flex-row items-center justify-between w-full gap-[30px]'>
                 <div className='flex items-center gap-[10px]'>
@@ -33,8 +33,8 @@ const Navbar = () => {
                         {/* <img src="https://via.placeholder.com/20" alt="User" /> */}
                         <h1>User</h1>
                     </div>
-                    <input className='w-[20vw] p-[5px]' type="text" placeholder='Search...' />
-                    <button className='bg-black text-white px-[10px]'>Search</button>
+                    {/* <input className='w-[20vw] p-[5px]' type="text" placeholder='Search...' /> */}
+                    {/* <button className='bg-black text-white px-[10px]'>Search</button> */}
                 </div>
             </div>
         </div>
