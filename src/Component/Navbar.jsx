@@ -1,45 +1,42 @@
-import React from 'react'
-import { useState } from 'react'
-import img1 from '../Image/facebook.avif'
-import img2 from '../Image/instagram.avif'
-import img3 from '../Image/twitter.avif'
-import img4 from '../Image/pinterest.avif'
+import React from 'react';
+import img1 from '../Image/facebook.avif';
+import img2 from '../Image/instagram.avif';
+import img3 from '../Image/twitter.avif';
+import img4 from '../Image/pinterest.avif';
 
 const Navbar = () => {
   return (
-    <div>
-        
-        <div className='flex flex-row fixed items-center w-full bg-gray-200 p-4 px-[40px] gap-[40px]'>
-            <div className='flex items-center'>
-                <h1 className='text-[#f0f02d] text-[15px] font-mono'>House</h1>
-            </div>
-            <div className='flex flex-row items-center justify-between w-full gap-[30px]'>
-                <div className='flex items-center gap-[10px]'>
-                    <ul className='lg:flex flex-row gap-[20px] px-[60px] hidden'>
-                        <li>Home</li>
-                        <li>Products</li>
-                        <a href="#contact"><li>Contact</li></a>
-                        <a href="#about"><li>About</li></a>
-                    </ul>
-                    <div className='lg:flex flex-row gap-[50px] hidden'>
-                        <img src={img1} alt="" />
-                        <img src={img2} alt="" />
-                        <img src={img3} alt="" />
-                        <img src={img4} alt="" />
-                    </div>
-                </div>
-                <div className='flex flex-row items-center gap-[20px]'>
-                    <div className='flex items-center gap-[10px]'>
-                        {/* <img src="https://via.placeholder.com/20" alt="User" /> */}
-                        <h1>User</h1>
-                    </div>
-                    {/* <input className='w-[20vw] p-[5px]' type="text" placeholder='Search...' /> */}
-                    {/* <button className='bg-black text-white px-[10px]'>Search</button> */}
-                </div>
-            </div>
+    <nav className="fixed top-0 left-0 w-full bg-gray-200 shadow-md z-50">
+      <div className="flex items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <div className="text-[#f0f02d] text-[20px] font-mono font-bold">
+          Fashion House
         </div>
-    </div>
-  )
-}
 
-export default Navbar
+        {/* Navigation Links */}
+        <ul className="hidden lg:flex gap-8 font-medium">
+          <li><a href="#" className="hover:text-yellow-600">Home</a></li>
+          <li><a href="#products" className="hover:text-yellow-600">Products</a></li>
+          <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
+          <li><a href="#about" className="hover:text-yellow-600">About</a></li>
+        </ul>
+
+        {/* Social Icons */}
+        <div className="hidden lg:flex gap-4">
+          <img src={img1} alt="Facebook" className="w-5 h-5" />
+          <img src={img2} alt="Instagram" className="w-5 h-5" />
+          <img src={img3} alt="Twitter" className="w-5 h-5" />
+          <img src={img4} alt="Pinterest" className="w-5 h-5" />
+        </div>
+
+        {/* User Info */}
+        <div className="flex items-center gap-2 text-sm">
+          {/* <img src="..." alt="User" className="w-5 h-5 rounded-full" /> */}
+          <span className="font-semibold">User</span>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
