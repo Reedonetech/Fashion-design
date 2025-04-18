@@ -1,8 +1,35 @@
 import React from 'react'
 
 const contact = () => {
+
+    const [name , setName]  = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+    const [sending, setSending ] = useState (false)
+
+    async function  fetchApi(e){
+        e.preventDefault()
+        setSending(true)
+        try {
+           const baseurl ='https://forms-io.onrender.com/submit-form/e42cabb3-88fd-42e8-817b-9f7c2608d152'
+           const response  = await fetch (baseurl,{
+              method:'POST',
+              headers: {'Content-type' : 'application/json'},
+              body : JSON.stringify({name, email, subject, message})    
+           }); 
+           const resData = await response.json();           
+            setSending(false)
+            toast.success('message sent!!!')    
+            console.log("data ", resData) 
+        } catch (error) {
+            setSending(false)
+            toast.error ('unable to send please check your internet ');
+            console.log(error)
+        }
+
+    }
   return (
-    <div>
+    <form onSubmit={fetchApi} method='post'>
         <div className='flex flex-col border-r-indigo-600 lg:pt-[2%] bg-red-800  lg:px-10 px-[20px] lg:gap-[30px] justify-center' id='contact'>
             <div className='w-[100%] h-[100%] bg-white shadow-2xl p-4 px-[40px] gap-[20px]'>
                 <div className='flex flex-col items-center justify-start p-2 px-[40px] w-[100%] h-[100%]'>
@@ -11,15 +38,15 @@ const contact = () => {
                 </div>
                 <div>
                     <form className='flex flex-col gap-[20px] lg:p-4 w-full'>
-                        <input className='border-2 border-gray-300 p-2 rounded-md' type="text" placeholder='Your Name' required />
-                        <input className='border-2 border-gray-300 p-2 rounded-md' type="email" placeholder='Your Email' required />
-                        <textarea className='border-2 border-gray-300 p-2 rounded-md' rows="5" placeholder='Your Message' required></textarea>
-                        <button className='bg-red-600 text-white p-2 rounded-md'>Send Message</button>
+                        <input onChange={(e)=> setName(e.target.value)} name='name' value={name}  className='border-2 border-gray-300 p-2 rounded-md' type="text" placeholder='Your Name' required />
+                        <input  onChange={(e)=> setEmail(e.target.value)} name='email' value={email}  className='border-2 border-gray-300 p-2 rounded-md' type="email" placeholder='Your Email' required />
+                        <textarea onChange={(e)=> setMessage(e.target.value)} name='message' value={message} className='border-2 border-gray-300 p-2 rounded-md' rows="5" placeholder='Your Message' required></textarea>
+                        <button className='bg-red-600 text-white p-2 rounded-md'> {sending ? 'sending...' : 'Send' } </button>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
   )
 }
 

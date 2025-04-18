@@ -4,11 +4,11 @@ import Navbar from './Component/Navbar';
 import Herobody from './Component/Herobody';
 import Herobody2 from './Component/Herobody2';
 import Herobody3 from './Component/Herobody3';
-import Herobody4 from './Component/Herobody4';
 import AboutUs from './Component/AboutUs';
 import Footer from './Component/Footer';
 import Course from './Component/Course';
 import ContactUs from './Component/ContactUs';
+import Service from './Component/Service';
 
 
 function App() {
@@ -18,11 +18,12 @@ function App() {
       <Hero />
       <AboutUs />
       <Course />
-      <Herobody4/>
       <ContactUs />
-      <Footer />
+      
+      <Service />
       {/* <Herobody /> */}
       {/* <Herobody3 /> */}
+      <Footer />
     </div>
   );
 }
