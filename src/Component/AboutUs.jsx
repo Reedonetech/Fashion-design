@@ -27,10 +27,10 @@ const AboutUs = () => {
               </ul>
             </div>
             <div className="flex flex-col items-start gap-4">
-              <p className="text-amber-500 lg:text-[19px] text-[16px] font-serif lg:w-[43vw] w-[80vw]">
+              <p className="lg:text-[19px] text-[16px] font-serif lg:w-[43vw] w-[80vw]">
                 H3 Fashion House is a modern fashion design academy committed to nurturing creativity and empowering aspiring fashion designers. Founded with a passion for style and innovation, we offer hands-on training, experienced instructors, and a supportive community for learners at all levels.
               </p>
-              <button className="flex items-center gap-3 text-blue-600 hover:underline">
+              <button className="flex items-center gap-3 text-gray-500 hover:underline">
                 <FaArrowCircleRight /> Discover more
               </button>
             </div>
@@ -42,28 +42,28 @@ const AboutUs = () => {
             <div className="flex flex-col gap-6 w-full lg:w-[50%]">
               {/* Feature 1 */}
               <div className="flex flex-col gap-2">
-                <FaShoppingBag className="w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] text-yellow-600" />
+                <FaShoppingBag className="w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] text-gray-500" />
                 <p className="text-[20px] lg:text-[26px] font-bold font-serif">Personalized Design</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
               </div>
 
               {/* Feature 2 */}
               <div className="flex flex-col gap-2">
-                <GiAmpleDress className="w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] text-yellow-600" />
+                <GiAmpleDress className="w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] text-gray-500" />
                 <p className="text-[20px] lg:text-[26px] font-bold font-serif">Expert Guidance</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
               </div>
 
               {/* Feature 3 */}
               <div className="flex flex-col gap-2">
-                <GiTravelDress className="w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] text-yellow-600" />
+                <GiTravelDress className="w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] text-gray-500" />
                 <p className="text-[20px] lg:text-[26px] font-bold font-serif">Tailored Solutions</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
               </div>
 
               {/* Feature 4 */}
               <div className="flex flex-col gap-2">
-                <MdContactEmergency className="w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] text-yellow-600" />
+                <MdContactEmergency className="w-[30px] lg:w-[50px] h-[30px] lg:h-[50px] text-gray-500" />
                 <p className="text-[20px] lg:text-[26px] font-bold font-serif">Dedicated Support</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
               </div>

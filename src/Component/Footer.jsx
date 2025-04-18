@@ -24,13 +24,13 @@ const Footer = () => {
           <div className="flex flex-col items-start p-4 lg:w-1/4">
             <p className="lg:text-[24px] text-[18px] font-bold mb-2">Email Us</p>
             <p>info@h3fashionhouse.com</p>
-            <a href="mailto:info@h3fashionhouse.com" className="text-yellow-300 hover:underline">Send Email</a>
+            <a href="mailto:info@h3fashionhouse.com" className="text-white hover:underline">Send Email</a>
           </div>
 
           <div className="flex flex-col items-start p-4 lg:w-1/4">
             <p className="lg:text-[24px] text-[18px] font-bold mb-2">Customer Support</p>
             <p>+234 xxx xxx xxxx</p>
-            <a href="tel:+234xxxxxxxxxx" className="text-yellow-300 hover:underline">Let's Talk</a>
+            <a href="tel:+234xxxxxxxxxx" className="text-white hover:underline">Let's Talk</a>
           </div>
 
           <div className="flex flex-col items-start p-4 lg:w-1/4">

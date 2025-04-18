@@ -68,7 +68,7 @@ const Herobody4 = () => {
               <p className='text-[16px] text-start max-w-[90%]'>
                 {service.description}
               </p>
-              <button className='bg-yellow-300 px-4 py-1 rounded-md hover:bg-yellow-400 transition'>
+              <button className='bg-black px-4 py-1 rounded-md hover:bg-yellow-400 text-white transition'>
                 Learn More
               </button>
             </div>
@@ -94,7 +94,7 @@ const Herobody4 = () => {
               <p className='text-[16px] text-start max-w-[90%]'>
                 {service.description}
               </p>
-              <button className='bg-yellow-300 px-4 py-1 rounded-md hover:bg-yellow-400 transition'>
+              <button className='bg-black px-4 py-1 rounded-md hover:bg-yellow-400 text-white transition'>
                 Learn More
               </button>
             </div>

@@ -14,7 +14,7 @@ const ContactUs = () => {
                         <input className='border-2 border-gray-300 p-2 rounded-md' type="text" placeholder='Your Name' required />
                         <input className='border-2 border-gray-300 p-2 rounded-md' type="email" placeholder='Your Email' required />
                         <textarea className='border-2 border-gray-300 p-2 rounded-md' rows="5" placeholder='Your Message' required></textarea>
-                        <button className='bg-red-600 text-white p-2 rounded-md'>Send Message</button>
+                        <button className='bg-black text-white p-2 rounded-md'>Send Message</button>
                     </form>
                 </div>
             </div>
