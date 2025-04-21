@@ -51,6 +51,24 @@ const Forms = () => {
             </div>
         </div>
         <ToastContainer />
+
+        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.37182129707!2d4.515736669834646!3d8.463175579000609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1036532a1f371417%3A0x18c83cfc52d08a5a!2s91%20Olorunsogo%20Rd%2C%20Ilorin%20240281%2C%20Kwara!5e0!3m2!1sen!2sng!4v1745255736381!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+
+        <div className="w-full flex justify-center items-center py-10 px-4">
+  <div className="w-full max-w-4xl h-[300px] rounded-2xl overflow-hidden shadow-lg border border-gray-300">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.37182129707!2d4.515736669834646!3d8.463175579000609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1036532a1f371417%3A0x18c83cfc52d08a5a!2s91%20Olorunsogo%20Rd%2C%20Ilorin%20240281%2C%20Kwara!5e0!3m2!1sen!2sng!4v1745255736381!5m2!1sen!2sng"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Google Map"
+    ></iframe>
+  </div>
+</div>
+
     </form>
   )
 }

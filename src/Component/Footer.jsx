@@ -66,7 +66,7 @@ const Footer = () => {
               <MapPin size={20} className="mr-2" />
               <p className="text-lg text-white font-medium">LOCATION</p>
             </div>
-            <p className="text-white leading-relaxed">H3 Fashion House Studio, Ilorin, Kwara State, Nigeria.</p>
+            <p className="text-white leading-relaxed">91 Olorunsogo Area behind Bovas filling station Ilorin, Kwara State, Nigeria.</p>
           </div>
 
           {/* Email */}
@@ -75,8 +75,8 @@ const Footer = () => {
               <Mail size={20} className="mr-2" />
               <p className="text-lg text-white font-medium">EMAIL</p>
             </div>
-            <p className="text-white mb-2">info@h3fashionhouse.com</p>
-            <a href="mailto:info@h3fashionhouse.com" className="text-white border-b border-gray-600 hover:border-white transition-colors duration-300 pb-1">Send Email</a>
+            <p className="text-white mb-2">h3fashionhouse@gmail.com</p>
+            <a href="mailto:h3fashionhouse@gmail.com" className="text-white border-b border-gray-600 hover:border-white transition-colors duration-300 pb-1">Send Email</a>
           </div>
 
           {/* Customer Support */}
@@ -85,8 +85,9 @@ const Footer = () => {
               <Phone size={20} className="mr-2" />
               <p className="text-lg text-white font-medium">CONTACT</p>
             </div>
-            <p className="text-white mb-2">+234  </p>
-            <a href="tel:+234xxxxxxxxxx" className="text-white border-b border-gray-600 hover:border-white transition-colors duration-300 pb-1">Let's Talk</a>
+           <a href="tel:+2347063005147" className="text-white mb-2">+234 7063005147</a>
+           <a href="tel:+2348039571392"  className="text-white mb-2">+234 8039571392</a>
+            <a href="https://wa.me/2347063005147 " className="text-white border-b border-gray-600 hover:border-white transition-colors duration-300 pb-1">Let's Talk</a>
           </div>
 
           {/* Opening Hours */}

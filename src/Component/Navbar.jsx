@@ -21,8 +21,8 @@ const Navbar = () => {
         <ul className="hidden lg:flex gap-8 font-semibold text-gray-700">
           <li><a href="#about" className="hover:text-yellow-600">About</a></li>
           <li><a href="#courses" className="hover:text-yellow-600">Courses</a></li>
-          <li><a href="#services" className="hover:text-yellow-600">Services</a></li>
           <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
+          <li><a href="#Enroll" className="hover:text-yellow-600">Apply for Course</a></li>
         </ul>
 
        

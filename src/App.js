@@ -9,6 +9,7 @@ import AboutUs from './Component/AboutUs';
 import Footer from './Component/Footer';
 import Course from './Component/Course';
 import Form from './Component/Form';
+import { Route } from 'lucide-react';
 // import Service from './Component/Service';
 
 
@@ -22,6 +23,7 @@ function App() {
       <Form />
       {/* <Service /> */}
       <Footer />
+      <Route path="/about" element={<AboutUs />} />
     </div>
   );
 }
