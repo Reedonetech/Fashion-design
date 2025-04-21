@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FaArrowRight, FaShoppingBag } from 'react-icons/fa';
+import { FaArrowRight  } from 'react-icons/fa';
+import { IoMdCheckmarkCircle } from "react-icons/io";
 import { GiAmpleDress, GiTravelDress } from 'react-icons/gi';
 import { MdContactEmergency } from 'react-icons/md';
 
@@ -79,46 +80,26 @@ const AboutUs = () => {
       <div 
         id="about-header"
         ref={sectionRefs.header}
-        className={`flex flex-col items-center mb-16 ${isVisible.header ? 'opacity-100' : 'opacity-0'} ${fadeIn}`}
+        className={`flex flex-col items-center mb-5 ${isVisible.header ? 'opacity-100' : 'opacity-0'} ${fadeIn}`}
       >
         <div className="relative mb-6">
           <h6 className="text-sm tracking-widest uppercase text-white">About Us</h6>
-          <div className="h-px w-12 bg-black mx-auto"></div>
+          <div className="h-px w-12 bg-white mx-auto"></div>
         </div>
-        <h2 className="text-4xl md:text-5xl font-light text-white  tracking-wide text-center mb-8">Who We Are ?</h2>
+        <h2 className="text-4xl md:text-5xl font-light text-white  tracking-wide text-center mb-2">Who We Are ?</h2>
        
       </div>
 
       {/* Content Container */}
       <div className="max-w-7xl mx-auto">
         {/* Top Section: Who We Are + Description */}
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-12 mb-20">
-          <div 
-            id="about-who"
-            ref={sectionRefs.who}
-            className={`flex flex-col items-start gap-4 lg:w-2/5 ${isVisible.who ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'} ${slideRight}`}
-            style={{ transitionDelay: '200ms' }}
-          >
-            <h3 className="text-2xl font-medium text-white border-b-2 border-black pb-2 mb-4">Who We Are</h3>
-            <ul className="space-y-4">
-              {[
-                'Over 5 years of fashion design excellence',
-                '100+ successful graduates',
-                'Practical-focused learning environment',
-                'One-on-one mentorship and guidance'
-              ].map((item, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <div className="h-1 w-1 bg-black rounded-full"></div>
-                  <span className="text-lg">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center text-center gap-5 mb-20">
+        
           
           <div 
             id="about-description"
             ref={sectionRefs.description}
-            className={`flex flex-col items-start gap-6 lg:w-3/5 ${isVisible.description ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} ${slideRight}`}
+            className={`flex flex-col text-center items-center gap-2 lg:w-3/5 ${isVisible.description ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} ${slideRight}`}
             style={{ transitionDelay: '400ms' }}
           >
             <p className="text-lg leading-relaxed text-white">
@@ -127,6 +108,15 @@ const AboutUs = () => {
             <p className="text-lg leading-relaxed text-white">
               Our approach combines technical skills with artistic vision, preparing students for success in the ever-evolving fashion industry. Whether you're starting your fashion journey or enhancing your existing skills, H3 Fashion House provides the guidance, resources, and inspiration you need to thrive.
             </p>
+
+             <div className='flex flex-col gap-3 justify-center'>
+             <h3 className="text-4xl md:text-5xl font-light text-white border-b-2 border-black py-4 mb-4">Why H3 Fashion House?</h3>
+              <h1 className="text-[17px] flex items-center gap-3 leading-relaxed text-white" ><IoMdCheckmarkCircle size={40} className="text-white"/>Over 5 years of fashion design excellence</h1>
+              <h1 className="text-[17px]  flex items-center gap-3 leading-relaxed text-white" ><IoMdCheckmarkCircle size={40} className="text-white" />100+ successful graduates</h1>
+              <h1 className="text-[17px]   flex items-center gap-3 leading-relaxed text-white" ><IoMdCheckmarkCircle size={40} className="text-white" />Practical-focused learning environment</h1>
+              <h1 className="text-[17px]   flex items-center gap-3 leading-relaxed text-white" ><IoMdCheckmarkCircle size={40} className="text-white" />One-on-one mentorship and guidance</h1>
+             </div>
+        
             <button className="group flex items-center gap-2 mt-4 text-white border-b border-white pb-1 transition-all hover:gap-4">
               Discover more
               <FaArrowRight className="transition-all group-hover:translate-x-1" />
@@ -134,47 +124,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Features Section (now full width) */}
-        {/* <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
-          {[
-            {
-              icon: <FaShoppingBag className={featureIconClass} />,
-              title: "Personalized Design",
-              description: "We believe in creating unique fashion experiences tailored to individual style preferences and body types, ensuring every piece is as special as the person wearing it."
-            },
-            {
-              icon: <GiAmpleDress className={featureIconClass} />,
-              title: "Expert Guidance",
-              description: "Our team of seasoned fashion professionals provides mentorship and instruction, sharing valuable industry insights and techniques to elevate your design skills."
-            },
-            {
-              icon: <GiTravelDress className={featureIconClass} />,
-              title: "Tailored Solutions",
-              description: "From concept to creation, we develop customized approaches to address unique fashion challenges, helping you express your vision with confidence."
-            },
-            {
-              icon: <MdContactEmergency className={featureIconClass} />,
-              title: "Dedicated Support",
-              description: "Our commitment to your success extends beyond the classroom, with ongoing assistance and resources to help you navigate the fashion industry's demands."
-            }
-          ].map((feature, index) => (
-            <div 
-              id={`feature-${index}`}
-              key={index}
-              ref={sectionRefs.features[index]}
-              className={`flex gap-6 ${isVisible.features[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${slideUp}`}
-              style={{ transitionDelay: `${300 + index * 150}ms` }}
-            >
-              <div className="flex-shrink-0 mt-1">
-                {feature.icon}
-              </div>
-              <div>
-                <h4 className="text-xl font-medium mb-2">{feature.title}</h4>
-                <p className="text-white">{feature.description}</p>
-              </div>
-            </div>
-          ))}
-        </div> */}
+      
         
       
      

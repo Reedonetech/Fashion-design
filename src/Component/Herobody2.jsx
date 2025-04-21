@@ -1,9 +1,9 @@
 import React from 'react'
-import { FaArrowCircleRight } from "react-icons/fa";
+
 import { FaShoppingBag } from "react-icons/fa";
 import { GiAmpleDress } from "react-icons/gi";
 import { MdContactEmergency } from "react-icons/md";
-import img7 from '../Image/img_23.png'
+
 
 const Herobody2 = () => {
   return (

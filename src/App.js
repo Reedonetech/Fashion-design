@@ -9,6 +9,7 @@ import Footer from './Component/Footer';
 import Course from './Component/Course';
 import ContactUs from './Component/ContactUs';
 import Service from './Component/Service';
+import Eroll from './Component/Eroll'
 
 
 function App() {
@@ -18,11 +19,11 @@ function App() {
       <Hero />
       <AboutUs />
       <Course />
+    
       <ContactUs />
       
       <Service />
-      {/* <Herobody /> */}
-      {/* <Herobody3 /> */}
+      <Eroll />
       <Footer />
     </div>
   );
