@@ -1,7 +1,11 @@
+<<<<<<< HEAD
+import {useState,React} from 'react'
+=======
 import React from "react";
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+>>>>>>> f92445a177adf9c3f21cd2f61f3a22b2d9efdd92
 
 const contact = () => {
 
