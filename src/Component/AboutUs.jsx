@@ -74,7 +74,7 @@ const AboutUs = () => {
   const featureIconClass = "text-black w-12 h-12 p-2 rounded-full bg-gray-100 shadow-md";
 
   return (
-    <div id="about" className="py-16 px-4 md:px-8 lg:px-16 text-white bg-gradient-to-b from-gray-900 to-black">
+    <div id="about" className="py-16  px-4 md:px-8 lg:px-16 text-white bg-gradient-to-b from-black to-black">
       {/* Stylish Header */}
       <div 
         id="about-header"
@@ -85,12 +85,8 @@ const AboutUs = () => {
           <h6 className="text-sm tracking-widest uppercase text-white">About Us</h6>
           <div className="h-px w-12 bg-black mx-auto"></div>
         </div>
-        <h2 className="text-4xl md:text-5xl font-light text-white  tracking-wide text-center mb-8">
-          Our <span className="font-normal">Story</span>
-        </h2>
-        <p className="text-white text-center max-w-2xl mx-auto">
-          Crafting elegance and empowering creativity since 2019
-        </p>
+        <h2 className="text-4xl md:text-5xl font-light text-white  tracking-wide text-center mb-8">Who We Are ?</h2>
+       
       </div>
 
       {/* Content Container */}
@@ -139,7 +135,7 @@ const AboutUs = () => {
         </div>
 
         {/* Features Section (now full width) */}
-        <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
+        {/* <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
           {[
             {
               icon: <FaShoppingBag className={featureIconClass} />,
@@ -178,66 +174,10 @@ const AboutUs = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         
-        {/* Journey Timeline - New Section */}
-        <div className="mt-20 pt-12 border-t border-gray-200">
-          <h3 className={`text-2xl font-medium text-center mb-12 ${isVisible.header ? 'opacity-100' : 'opacity-0'} ${fadeIn}`} style={{ transitionDelay: '300ms' }}>
-            Our Journey
-          </h3>
-          
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gray-300"></div>
-            
-            {/* Timeline items */}
-            <div className="space-y-16">
-              {[
-                {
-                  year: "2019",
-                  title: "The Beginning",
-                  description: "H3 Fashion House was founded with a vision to blend traditional craftsmanship with modern design principles."
-                },
-                {
-                  year: "2020",
-                  title: "Growth & Expansion",
-                  description: "Expanded our curriculum to include specialized courses in sustainable fashion and digital design technologies."
-                },
-                {
-                  year: "2021",
-                  title: "Community Building",
-                  description: "Established partnerships with local designers and launched our first student showcase event."
-                },
-                {
-                  year: "Present",
-                  title: "Innovation & Excellence",
-                  description: "Continuing to set new standards in fashion education while nurturing the next generation of creative talent."
-                },
-              ].map((item, index) => (
-                <div 
-                  key={index} 
-                  className={`relative flex flex-col md:flex-row items-center justify-between gap-8 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
-                >
-                  {/* Timeline dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-black"></div>
-                  
-                  {/* Year marker */}
-                  <div className={`md:w-1/2 flex ${index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'}`}>
-                    <div className={`bg-black text-white rounded-full py-2 px-4 w-24 text-center ${isVisible.header ? 'opacity-100 scale-100' : 'opacity-0 scale-0'} transition-all duration-700 ease-out`} style={{ transitionDelay: `${600 + index * 200}ms` }}>
-                      {item.year}
-                    </div>
-                  </div>
-                  
-                  {/* Content */}
-                  <div className={`md:w-1/2 ${isVisible.header ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${slideUp}`} style={{ transitionDelay: `${700 + index * 200}ms` }}>
-                    <h4 className="text-xl font-medium mb-2">{item.title}</h4>
-                    <p className="text-white">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+      
+     
       </div>
     </div>
   );

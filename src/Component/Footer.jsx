@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       {/* Main footer content */}
-      <div className="bg-gradient-to-b from-gray-900 to-black text-white p-8">
+      <div className="bg-gradient-to-b from-black  to-black text-white p-8">
         {/* Brand name with elegant animation */}
         <div className={`flex justify-center mb-12 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${slideUp}`} style={{ transitionDelay: '300ms' }}>
           <h2 className="lg:text-5xl text-3xl font-light tracking-widest text-center border-b border-gray-700 pb-4 px-8">
@@ -64,18 +64,18 @@ const Footer = () => {
           <div className={`flex flex-col items-start p-4 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${slideUp}`} style={{ transitionDelay: '400ms' }}>
             <div className="flex items-center mb-4 text-gray-300">
               <MapPin size={20} className="mr-2" />
-              <p className="text-lg font-medium">ATELIER</p>
+              <p className="text-lg text-white font-medium">LOCATION</p>
             </div>
-            <p className="text-gray-400 leading-relaxed">H3 Fashion House Studio, Ilorin, Kwara State, Nigeria.</p>
+            <p className="text-white leading-relaxed">H3 Fashion House Studio, Ilorin, Kwara State, Nigeria.</p>
           </div>
 
           {/* Email */}
           <div className={`flex flex-col items-start p-4 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${slideUp}`} style={{ transitionDelay: '500ms' }}>
-            <div className="flex items-center mb-4 text-gray-300">
+            <div className="flex items-center mb-4 text-white">
               <Mail size={20} className="mr-2" />
-              <p className="text-lg font-medium">EMAIL</p>
+              <p className="text-lg text-white font-medium">EMAIL</p>
             </div>
-            <p className="text-gray-400 mb-2">info@h3fashionhouse.com</p>
+            <p className="text-white mb-2">info@h3fashionhouse.com</p>
             <a href="mailto:info@h3fashionhouse.com" className="text-white border-b border-gray-600 hover:border-white transition-colors duration-300 pb-1">Send Email</a>
           </div>
 
@@ -83,9 +83,9 @@ const Footer = () => {
           <div className={`flex flex-col items-start p-4 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${slideUp}`} style={{ transitionDelay: '600ms' }}>
             <div className="flex items-center mb-4 text-gray-300">
               <Phone size={20} className="mr-2" />
-              <p className="text-lg font-medium">CONTACT</p>
+              <p className="text-lg text-white font-medium">CONTACT</p>
             </div>
-            <p className="text-gray-400 mb-2">+234 xxx xxx xxxx</p>
+            <p className="text-white mb-2">+234  </p>
             <a href="tel:+234xxxxxxxxxx" className="text-white border-b border-gray-600 hover:border-white transition-colors duration-300 pb-1">Let's Talk</a>
           </div>
 
@@ -93,16 +93,16 @@ const Footer = () => {
           <div className={`flex flex-col items-start p-4 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${slideUp}`} style={{ transitionDelay: '700ms' }}>
             <div className="flex items-center mb-4 text-gray-300">
               <Clock size={20} className="mr-2" />
-              <p className="text-lg font-medium">HOURS</p>
+              <p className="text-lg text-white font-medium">HOURS</p>
             </div>
-            <p className="text-gray-400">Monday - Friday</p>
-            <p className="text-gray-400">09:00 - 17:00</p>
+            <p className="text-white">Monday - Friday</p>
+            <p className="text-white">09:00 - 17:00</p>
           </div>
         </div>
 
         {/* Copyright and links */}
         <div className={`flex flex-col items-center text-center pt-8 border-t border-gray-800 ${isVisible ? 'opacity-100' : 'opacity-0'} ${fadeIn}`} style={{ transitionDelay: '800ms' }}>
-          <p className="text-sm text-gray-400 mb-2">© {new Date().getFullYear()} H3 Fashion House. All rights reserved.</p>
+          <p className="text-sm text-white mb-2">© {new Date().getFullYear()} H3 Fashion House. All rights reserved.</p>
           <div className="flex space-x-4 text-sm">
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Terms</a>
             <span className="text-gray-600">|</span>

@@ -124,7 +124,7 @@ const Services = () => {
                     Learn More 
                     <ChevronRight size={18} className="ml-1 transition-transform group-hover:translate-x-1" />
                   </span>
-                  <span className="absolute bottom-0 left-0 w-0 h-full bg-yellow-400 transition-all duration-300 group-hover:w-full z-0"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-full bg-gray-900  transition-all duration-300 group-hover:w-full z-0"></span>
                 </button>
               </div>
             </div>
@@ -169,7 +169,7 @@ const Services = () => {
                     Learn More 
                     <ChevronRight size={18} className="ml-1 transition-transform group-hover:translate-x-1" />
                   </span>
-                  <span className="absolute bottom-0 left-0 w-0 h-full bg-yellow-400 transition-all duration-300 group-hover:w-full z-0"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-full bg-gray-900 transition-all duration-300 group-hover:w-full z-0"></span>
                 </button>
               </div>
             </div>
