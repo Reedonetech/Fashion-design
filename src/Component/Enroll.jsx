@@ -128,7 +128,7 @@ const Enroll = () => {
             disabled={sending}
             className="bg-[black] text-white font-semibold py-3 px-12 rounded-lg shadow-md hover:bg-[#fffff] transition"
           >
-            {sending ? "Sending..." : "Send Message"}
+            {sending ? "Sending..." : "Apply Now"}
           </button>
         </div>
 
