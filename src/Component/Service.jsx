@@ -71,7 +71,7 @@ const Services = () => {
   const fadeUpClass = "transition-all duration-700 ease-out";
   
   return (
-    <div className="bg-white py-20 px-6 md:px-10 lg:px-20">
+    <div className="bg-white py-20 px-6 md:px-10 lg:px-20" id="services">
       {/* Header Section with Elegant Animation */}
       <div className="flex flex-col items-center mb-16 text-center">
         <div className={`overflow-hidden mb-2 ${fadeUpClass}`}>
