@@ -43,8 +43,8 @@ const Navbar = () => {
         <ul className="flex flex-col gap-4 font-medium text-white justify-center items-center ">
           <li><a href="#about" className="hover:text-yellow-600">About</a></li>
           <li><a href="#courses" className="hover:text-yellow-600">Courses</a></li>
-          <li><a href="#services" className="hover:text-yellow-600">Service</a></li>
           <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
+          <li><a href="#Enroll" className="hover:text-yellow-600" onClick={handleEnrollClick}>Apply for Course</a></li>
         </ul>
       </div>
     </nav>
