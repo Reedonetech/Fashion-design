@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
       <div className="flex items-center justify-around py-4">
@@ -43,7 +40,6 @@ const Navbar = () => {
           <li><a href="#contact" className="hover:text-yellow-600">Service</a></li>
           <li><a href="#about" className="hover:text-yellow-600">Contact</a></li>
         </ul>
-        
       </div>
     </nav>
   );
