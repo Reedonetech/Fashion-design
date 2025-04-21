@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleEnrollClick = () => {
+    navigate('/enroll'); // Navigate to the enroll page
+  }
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
       <div className="flex items-center justify-around py-4">
@@ -22,7 +28,7 @@ const Navbar = () => {
           <li><a href="#about" className="hover:text-yellow-600">About</a></li>
           <li><a href="#courses" className="hover:text-yellow-600">Courses</a></li>
           <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
-          <li><a href="#Enroll" className="hover:text-yellow-600">Apply for Course</a></li>
+          <li><a href="#Enroll" className="hover:text-yellow-600" onClick={handleEnrollClick}>Apply for Course</a></li>
         </ul>
 
        

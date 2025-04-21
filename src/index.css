@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 .backgroundImage1{
     background-image: url('./Image/pic1.jpg');
     background-size: cover;
@@ -9,4 +9,4 @@
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
-}
+} */
