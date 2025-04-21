@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
       <div className="flex items-center justify-around py-4">
@@ -22,10 +19,10 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <ul className="hidden lg:flex gap-8 font-semibold text-gray-700">
-          <li><a href="/" className="hover:text-yellow-600">About</a></li>
-          <li><a href="#products" className="hover:text-yellow-600">Courses</a></li>
-          <li><a href="#contact" className="hover:text-yellow-600">Services</a></li>
-          <li><a href="#about" className="hover:text-yellow-600">Contact</a></li>
+          <li><a href="#about" className="hover:text-yellow-600">About</a></li>
+          <li><a href="#courses" className="hover:text-yellow-600">Courses</a></li>
+          <li><a href="#services" className="hover:text-yellow-600">Services</a></li>
+          <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
         </ul>
 
        
@@ -38,12 +35,11 @@ const Navbar = () => {
         }`}
       >
         <ul className="flex flex-col gap-4 font-medium text-white justify-center items-center ">
-          <li><a href="/" className="hover:text-yellow-600">About</a></li>
-          <li><a href="#products" className="hover:text-yellow-600">Courses</a></li>
-          <li><a href="#contact" className="hover:text-yellow-600">Service</a></li>
-          <li><a href="#about" className="hover:text-yellow-600">Contact</a></li>
+          <li><a href="#about" className="hover:text-yellow-600">About</a></li>
+          <li><a href="#courses" className="hover:text-yellow-600">Courses</a></li>
+          <li><a href="#services" className="hover:text-yellow-600">Service</a></li>
+          <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
         </ul>
-        
       </div>
     </nav>
   );
